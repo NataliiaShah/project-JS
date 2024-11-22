@@ -10,12 +10,12 @@
   line-height: 1.23077;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--text-color);
   margin-bottom: 40px;
 }
 
 .green-title {
-  color: #00b068;
+  color: var(--text-color-green);
 }
 
 .benefits-list {
@@ -28,7 +28,7 @@
   line-height: 1.55556;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--text-color);
   margin-bottom: 16px;
   margin-top: 16px;
 }
@@ -38,7 +38,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--text-color);
 }
 
 ul .benefits-item:not(:last-child) {
@@ -46,7 +46,7 @@ ul .benefits-item:not(:last-child) {
 }
 
 .benefits-item-icon {
-  background-color: #bcdfd1;
+  background-color: var(--bg-tech-skills-green);
   border-radius: 8px;
   width: 48px;
   height: 48px;
@@ -56,29 +56,10 @@ ul .benefits-item:not(:last-child) {
 }
 
 .benefits-icon {
-  stroke: #00b068;
+  stroke: var(--text-color-green);
   fill: none;
 }
 
-.dark-benefits-title {
-    color:  #f0f0f0;;
-  }
-  
-  .dark-benefits-title-green {
-    color: #14c57c;
-  }
-
-  .dark-benefits-item-icon{
-      background-color: #204136;
-  }
-
-  .dark-benefits-icon {
-    stroke: #14C57C;
-  }
-
-  .dark-benefits-subtitle, .dark-benefits-item-description{
-    color: #f0f0f0;
-  }
 @media screen and (min-width: 768px) {
   .benefits {
     padding-top: 62px;
@@ -121,7 +102,7 @@ ul .benefits-item:not(:last-child) {
     padding-bottom: 82px;
   }
 
-  .benefits-title{
+  .benefits-title {
     max-width: 736px;
     min-width: 681px;
     margin-bottom: -96px;
@@ -134,10 +115,27 @@ ul .benefits-item:not(:last-child) {
   .benefits-item {
     width: 384px;
   }
-
 }
 
-.dark-body {
-    background-color: #1E2023;
-    
+/* :root .light-theme {
+  --bg-color: #f0f0f0;
+  --text-color: #292929;
+  --text-color-green: #00b068;
+  --bg-social: #e4e5e6;
+  --bg-tech-skills-green: #bcdfd1;
+  --bg-tech-skills-gray: #e4e5e6;
 }
+
+:root .dark-theme {
+  --bg-color: #1e2023;
+  --text-color: #f0f0f0;
+  --text-color-green: #14c57c;
+  --bg-social: #2a2d32;
+  --bg-tech-skills-green: #204136;
+  --bg-tech-skills-gray: #e4e5e6;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+} */
