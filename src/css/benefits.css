@@ -1,0 +1,143 @@
+.benefits {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.benefits-title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 40px;
+}
+
+.green-title {
+  color: #00b068;
+}
+
+.benefits-list {
+  font-family: 'Poppins', sans-serif;
+}
+
+.benefits-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.benefits-item-description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+ul .benefits-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.benefits-item-icon {
+  background-color: #bcdfd1;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-icon {
+  stroke: #00b068;
+  fill: none;
+}
+
+.dark-benefits-title {
+    color:  #f0f0f0;;
+  }
+  
+  .dark-benefits-title-green {
+    color: #14c57c;
+  }
+
+  .dark-benefits-item-icon{
+      background-color: #204136;
+  }
+
+  .dark-benefits-icon {
+    stroke: #14C57C;
+  }
+
+  .dark-benefits-subtitle, .dark-benefits-item-description{
+    color: #f0f0f0;
+  }
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  .benefits-title {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+  }
+
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .benefits-item {
+    width: 336px;
+  }
+
+  .benefits-list > :first-child {
+    margin-left: 368px;
+  }
+  .benefits-subtitle {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  ul .benefits-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .benefits {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .benefits-title{
+    max-width: 736px;
+    min-width: 681px;
+    margin-bottom: -96px;
+  }
+
+  .benefits-list > :first-child {
+    margin-left: 832px;
+  }
+
+  .benefits-item {
+    width: 384px;
+  }
+
+}
+
+.dark-body {
+    background-color: #1E2023;
+    
+}
