@@ -3,6 +3,8 @@ html {
 }
 
 body {
+  background-color: #f0f0f0;
+  /* background-color: #1E2023; */
   font-family: 'Poppins', 'Montserrat', 'Impact', sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,6 +31,7 @@ ol {
 }
 
 a {
+  font-family: inherit;
   color: inherit;
   text-decoration: none;
 }
@@ -69,4 +72,15 @@ textarea {
   .container {
     max-width: 1280px;
   }
+}
+
+:root {
+  --background-black-color: #292929;
+  --accet-green-color: #00b068;
+  --background-white-color: #f0f0f0;
+  --light-grey-color: #e4e5e6;
+  --light-accet-green-color: #bcdfd1;
+  --hover-green-color: #009156;
+  --error-color: #e74a3b;
+  --light-hover-grey-color: #bbbbbb;
 }
