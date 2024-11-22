@@ -1,14 +1,3 @@
-:root {
-  --background-black-color: #292929;
-  --accet-green-color: #00b068;
-  --background-white-color: #f0f0f0;
-  --light-grey-color: #e4e5e6;
-  --light-accet-green-color: #bcdfd1;
-  --hover-green-color: #009156;
-  --error-color: #e74a3b;
-  --light-hover-grey-color: #bbbbbb;
-}
-
 html {
   scroll-behavior: smooth;
 }

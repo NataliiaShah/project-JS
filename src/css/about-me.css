@@ -1,0 +1,67 @@
+:root {
+  --background-black-color: #292929;
+  --accet-green-color: #00b068;
+  --background-white-color: #f0f0f0;
+  --light-grey-color: #e4e5e6;
+  --light-accet-green-color: #bcdfd1;
+  --hover-green-color: #009156;
+  --error-color: #e74a3b;
+  --light-hover-grey-color: #bbbbbb;
+}
+
+.about-me {
+}
+
+.container {
+}
+
+.about-title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.about-title > span {
+  color: #00b068;
+}
+
+.about-img {
+}
+
+.img {
+}
+
+.about-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.about-subtext {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+.about-list {
+}
+
+.about-item {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
