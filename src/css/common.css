@@ -1,3 +1,22 @@
+:root {
+  --black-color-light-th: #292929;
+  --accet-green-color-light-th: #00b068;
+  --white-color: #f0f0f0;
+  --light-grey-color-light-th: #e4e5e6;
+  --light-accet-green-color-light-th: #bcdfd1;
+  --hover-green-color: #009156;
+  --error-color: #e74a3b;
+  --hover-grey-color-light-th: #bbbbbb;
+  --black-color-dark-th: #1e2023;
+  --accet-green-color-dark-th: #14c57c;
+  --charcoal-color-dark-th: #2a2d32;
+  --dark-accet-color-dark-th: #204136;
+  --hover-charcoal-color-dark-th: #2a2d32;
+  --first-font-family: 'Poppins', sans-serif;
+  --second-font-family: 'Impact', sans-serif;
+  --third-font-family: 'Montserrat', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -72,15 +91,4 @@ textarea {
   .container {
     max-width: 1280px;
   }
-}
-
-:root {
-  --background-black-color: #292929;
-  --accet-green-color: #00b068;
-  --background-white-color: #f0f0f0;
-  --light-grey-color: #e4e5e6;
-  --light-accet-green-color: #bcdfd1;
-  --hover-green-color: #009156;
-  --error-color: #e74a3b;
-  --light-hover-grey-color: #bbbbbb;
 }
