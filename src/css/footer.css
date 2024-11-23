@@ -1,1 +1,214 @@
 
+.footer {
+    border-top: 1px solid #e4e5e6;
+    padding: 40px 20px;
+    margin-top: 82px;
+}
+
+.footer .footer-font {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.footer .footer-logo-link {
+    font-family: 'Impact';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.footer .footer-logo-span {
+    color: #00b068;
+}
+
+/**-------------------360--------------------*/
+
+.footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 360px;
+    height: 384px;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer .footer-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+.footer .footer-list-item {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.footer .footer-list-item:hover,
+.footer .footer-list-item:focus {
+    color: rgba(0, 176, 104, 1);
+}
+
+.footer .footer-list-link {
+    transition: color 250ms;
+}
+
+.footer .footer-list-link:hover,
+.footer .footer-list-link:focus {
+    color: rgba(0, 176, 104, 1);
+}
+
+.footer .copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .scroll-up-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: var(--light-grey);
+    z-index: 1000;
+    align-items: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.footer .scroll-icon {
+    stroke: var(--text);
+    fill: none;
+    transform: rotate(180deg);
+    width: 32px;
+    height: 32px;
+}
+
+.footer .is-active-scroll {
+    visibility: visible;
+    opacity: 1;
+}
+
+/**-------------------768--------------------*/
+
+@media screen and (min-width: 768px) {
+    .footer .footer-container {
+        max-width: 768px;
+        height: 216px;
+    }
+
+        .footer .footer-content {
+        height: 50%;
+    }
+
+        .footer .footer-list {
+        flex-direction: row;
+        width: 412px;
+        margin-top: 32px;
+        margin-bottom: 0;
+    }
+
+        .footer .footer-list-item {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+        .footer .copyright {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+        .footer .space-copyright {
+        margin-left: 5px;
+    }
+}
+
+/**-------------------1280--------------------*/
+
+@media screen and (min-width: 1280px) {
+    .footer .footer-container {
+        max-width: 1280px;
+        height: 160px;
+    }
+
+        .footer .footer-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+        .footer .footer-list {
+        height: 24px;
+        padding-top: 0px;
+    }
+}
+
+.footer .scroll-btn {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    bottom: 3%;
+    right: 3%;
+    border: none;
+    border-radius: 50%;
+    z-index: 2000;
+    background-color: var(--light-grey);
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.footer .scroll-btn-icon {
+    width: 30px;
+    height: 30px;
+    fill: none;
+    stroke: var(--text);
+    transform: rotate(180deg);
+}
+
+.footer .is-active-scroll {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* --- Footer Section Dark theme --- */
+.dark-footer {
+    border-top: 1px solid #2a2d32;
+    background-color: #1e2023;
+    color: #f0f0f0;
+}
+
+.dark-footer .footer-logo-span {
+    color: #14c57c;
+}
+
+.dark-footer .footer-list-item:hover,
+.dark-footer .footer-list-item:focus {
+    color: rgba(20, 197, 124, 0.6);
+}
+
+.dark-footer .footer-list-link:hover,
+.dark-footer .footer-list-link:focus {
+    color: rgba(20, 197, 124, 0.6);
+}
