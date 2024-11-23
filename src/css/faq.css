@@ -1,12 +1,12 @@
 .faq {
   display: flex;
-  flex-direction: column; /* Розташування елементів в колонку */
-  align-items: flex-start; /* Вирівнювання елементів за лівим краєм */
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
-  gap: 40px; /* Простір між елементами */
-  width: 360px; /* Ширина секції */
-  height: 1320px; /* Висота секції */
-  padding: 0 20px; /* Відступи зліва і справа */
+  gap: 40px;
+  width: 360px;
+  height: 1320px;
+  padding: 0 20px;
 }
 
 .faq-title {
@@ -20,33 +20,33 @@
 }
 
 .highlight {
-  color: #00b068; /* Виділений текст (питання) */
+  color: #00b068;
 }
 
 .faq-list {
-  list-style-type: none; /* Відсутність маркерів */
-  padding: 0; /* Прибираємо внутрішні відступи */
-  margin: 0; /* Прибираємо зовнішні відступи */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .question-button-div {
   display: flex;
-  justify-content: space-between; /* Вирівнювання елементів на рядку */
-  width: 272px; /* Заповнюємо ширину */
+  justify-content: space-between;
+  width: 272px;
 }
 
 .faq-item {
-  width: 100%; /* Елементи списку займають всю ширину */
-  background-color: #bcdfd1; /* Світло-зелений фон */
-  border-radius: 16px; /* Округлені кути */
-  padding: 28px 24px; /* Відступи всередині кожного елемента */
+  width: 100%;
+  background-color: #bcdfd1;
+  border-radius: 16px;
+  padding: 28px 24px;
   display: flex;
-  flex-direction: column; /* Елементи розташовані вертикально */
-  align-items: flex-start; /* Вирівнювання за лівим краєм */
-  justify-content: flex-start; /* Вирівнювання по верхньому краю */
-  width: 320px; /* Ширина елемента */
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 320px;
   height: auto;
-  position: relative; /* Важливо для позиціонування кнопки всередині */
+  position: relative;
 }
 
 .faq-question {
@@ -61,47 +61,47 @@
 }
 
 .faq-answer {
-  font-family: 'Poppins', sans-serif; /* Шрифт Poppins */
+  font-family: 'Poppins', sans-serif;
   display: flex;
-  align-items: flex-start; /* Вирівнювання за лівим краєм */
-  justify-content: flex-start; /* Вирівнювання по верхньому краю */
-  flex-direction: row; /* Розташування елементів по рядку */
-  width: 272px; /* Ширина тексту */
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 272px;
   height: auto;
   font-size: 16px;
   color: #5c5c5c;
   font-weight: 300;
-  font-size: 16px; /* Розмір шрифта */
-  line-height: 1.5; /* Висота рядка */
-  letter-spacing: 0.03em; /* Міжбуквений інтервал */
-  color: #292929; /* Колір тексту */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
 }
 
 .accordion-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent; /* Прозорий фон */
-  padding: 8px; /* Відступи всередині кнопки */
-  border-radius: 8px; /* Округлені кути */
-  width: 32px; /* Ширина кнопки */
-  height: 32px; /* Висота кнопки */
-  cursor: pointer; /* Вказівник при наведенні */
-  transition: background-color 0.3s ease; /* Перехід при наведенні */
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
-  position: absolute; /* Позиціонування кнопки всередині FAQ item */
-  top: 28px; /* Відстань від верху контейнера */
-  right: 24px; /* Відстань від правого краю контейнера */
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 28px;
+  right: 24px;
 }
 
 .accordion-btn:hover {
-  background-color: #f0f0f0; /* Зміна кольору фону кнопки при наведенні */
+  background-color: #f0f0f0;
 }
 
 .accordion-icon {
-  width: 16px; /* Ширина іконки */
-  height: 16px; /* Висота іконки */
-  fill: none; /* Прибираємо заливку, оскільки використовуємо stroke */
-  stroke: #292929; /* Колір контурів іконки */
-  stroke-width: 2; /* Товщина лінії іконки */
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: #292929;
+  stroke-width: 2;
 }
