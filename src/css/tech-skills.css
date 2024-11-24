@@ -16,7 +16,7 @@
 .tech-term-first,
 .tech-term-second {
       overflow: hidden;
-      font-family: var(--first-fond-family);
+      font-family: var(--first-font-family);
       font-weight: 500;
       font-size: 32px;
       line-height: 40px;
@@ -28,8 +28,8 @@
 }
 
 .tech-term-second {
-  color: var(--titel-accent-green-color);
-  background-color: var(--grey);
+  color: var(--title-accent-green-color);
+  background-color: var(--gray);
   transform: translateX(-2px) rotate(2deg);
   z-index: 0;
 }
@@ -74,7 +74,7 @@
   transform: translateY(-50%);
   width: 8px;
   height: 8px;
-  background-color:var(--titel-accent-green-color);
+  background-color: var(--title-accent-green-color);
   border-radius: 2px;
 }
 
@@ -110,7 +110,7 @@
 
   .tech-term-first,
   .tech-term-second {
-    fond-size: 36px;
+    font-size: 36px;
     line-height: 48px;
   }
 
