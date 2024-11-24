@@ -4,8 +4,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 40px;
-  /* width: 360px; */
-  /* padding: 0 20px; */
 }
 
 .faq-img {
@@ -60,11 +58,9 @@
   text-transform: uppercase;
   margin-bottom: 24px;
   margin-right: 16px;
-  width: auto;
 }
 
 .faq-question-alt {
-  width: 216px;
 }
 
 .faq-answer {
@@ -74,21 +70,8 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #292929;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  width: 272px;
-  height: auto;
-  font-size: 16px;
-  color: #5c5c5c;
-  /* display: none; */
+  display: none; /* Initially hidden */
 }
-
-/* Показати відповідь при активному елементі */
-/* .faq-item.active .faq-answer {
-  display: block; 
-} */
 
 .accordion-btn {
   display: flex;
@@ -109,6 +92,10 @@
   fill: none;
   stroke: #292929;
   stroke-width: 2;
+}
+
+.faq-item.active .faq-answer {
+  display: block; /* Show the answer when the item is active */
 }
 
 @media screen and (min-width: 768px) {
