@@ -1,0 +1,119 @@
+.tech-skills {
+  padding-top: 82px;
+  padding-bottom: 82px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.tech-term {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.tech-term-first {
+  background-color: #bcdfd1;
+  background-size: auto;
+  overflow: hidden;
+}
+
+.tech-term-second {
+  background-color: #e4e5e6;
+  transform: rotate(2deg);
+  background-size: auto;
+  overflow: hidden;
+}
+
+.term-first {
+  display: inline-block;
+  animation: marquee 18s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.term-second {
+  display: inline-block;
+  animation: marqueeLine 18s linear infinite;
+}
+
+@keyframes marqueeLine {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.tech-skills-list {
+  width: 1517px;
+  height: 128px;
+  display: flex;
+}
+
+.tech-skills-item {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+}
+
+.first {
+  color: #292929;
+  display: flex;
+  align-items: center;
+
+}
+
+.first::before {
+  content: '';
+  display: inline-block;
+  border-radius: 2px;
+  width: 8px;
+  height: 8px;
+  background: #00b068;
+  margin-right: auto;
+  margin-left: 16px;
+  margin-right: 16px;
+
+}
+
+.second {
+  color: #00b068;
+  display: flex;
+  align-items: center;
+
+}
+
+.second::before {
+  content: '';
+  display: inline-block;
+  border-radius: 2px;
+  width: 8px;
+  height: 8px;
+  background: #292929;
+  margin-right: auto;
+  margin-left: 16px;
+  margin-right: 16px;
+
+}
