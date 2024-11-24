@@ -1,20 +1,22 @@
 
-const themeToggleButton = document.querySelector('.theme-toggle');
 const body = document.body;
 const favicon = document.getElementById('favicon');
+const themeCheckbox = document.getElementById('change-theme');
 
-// Завантаження збереженої теми
 const currentTheme = localStorage.getItem('theme') || 'light-theme';
 
 body.classList.add(currentTheme);
+themeCheckbox.checked = currentTheme!=='light-theme';
+
 setFavicon(currentTheme === 'light-theme' ? '#ffffff' : '#000000');
 // Зміна теми при кліку
-themeToggleButton.addEventListener('click', () => {
-
+// themeToggleButton.addEventListener('click', () => {
+  themeCheckbox.addEventListener('change', function () {
     const newTheme = body.classList.contains('light-theme') ? 'dark-theme' : 'light-theme';
     body.classList.remove('light-theme', 'dark-theme');
     body.classList.add(newTheme);
     setFavicon(newTheme === 'light-theme' ? '#ffffff' : '#000000');
+   !themeCheckbox.checked;
     // Зберегти тему
     localStorage.setItem('theme', newTheme);
         
@@ -34,4 +36,3 @@ function setFavicon(color) {
   favicon.setAttribute('href', `data:image/svg+xml;base64,${btoa(svg)}`);
   
 }
-
