@@ -1,6 +1,5 @@
 .tech-skills {
-  padding-top: 82px;
-  padding-bottom: 82px;
+  padding: 40px 0px;
 }
 
 .visually-hidden {
@@ -9,111 +8,137 @@
   height: 1px;
   margin: -1px;
   border: 0;
-  padding: 0;
+  padding: 0px;
   white-space: nowrap;
   overflow: hidden;
 }
 
-.tech-term {
-  width: 100%;
-  white-space: nowrap;
-}
-
-.tech-term-first {
-  background-color: #bcdfd1;
-  background-size: auto;
-  overflow: hidden;
+.tech-term-first,
+.tech-term-second {
+      overflow: hidden;
+      font-family: var(--first-fond-family);
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      background-color: var(--tech-skills-green);
+      position: relative;
+      z-index: 1;
 }
 
 .tech-term-second {
-  background-color: #e4e5e6;
-  transform: rotate(2deg);
-  background-size: auto;
-  overflow: hidden;
+  color: var(--titel-accent-green-color);
+  background-color: var(--grey);
+  transform: translateX(-2px) rotate(2deg);
+  z-index: 0;
 }
 
-.term-first {
-  display: inline-block;
-  animation: marquee 18s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
+.term-first,
 .term-second {
-  display: inline-block;
-  animation: marqueeLine 18s linear infinite;
-}
-
-@keyframes marqueeLine {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.tech-skills-list {
-  width: 1517px;
-  height: 128px;
   display: flex;
+}
+
+.tech-skills-list-first,
+.tech-skills-list-second {
+  list-style: none;
+  display: flex;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 32px 0px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.tech-skills-list-second {
+  animation-name: marqueeLine;
+  animation-duration: 5s;
 }
 
 .tech-skills-item {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 1.33;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-
+  position: relative;
+  padding-left: 16px;
+  padding-right: 12px;
 }
 
-.first {
-  color: #292929;
-  display: flex;
-  align-items: center;
-
-}
-
-.first::before {
+.first::before,
+.second::before {
   content: '';
-  display: inline-block;
-  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 8px;
   height: 8px;
-  background: #00b068;
-  margin-right: auto;
-  margin-left: 16px;
-  margin-right: 16px;
-
-}
-
-.second {
-  color: #00b068;
-  display: flex;
-  align-items: center;
-
+  background-color:var(--titel-accent-green-color);
+  border-radius: 2px;
 }
 
 .second::before {
-  content: '';
-  display: inline-block;
+  background-color: var(--main-text-color);
   border-radius: 2px;
-  width: 8px;
-  height: 8px;
-  background: #292929;
-  margin-right: auto;
-  margin-left: 16px;
-  margin-right: 16px;
+}
 
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+  .tech-skills {
+    padding: 62px 0;
+  }
+
+  .tech-term-first,
+  .tech-term-second {
+    fond-size: 36px;
+    line-height: 48px;
+  }
+
+  .tech-term-second {
+    overflow: hidden;
+  }
+
+  .term-first {
+    padding: 40px 0px;
+    min-width: 100%;
+    white-space: nowrap;
+  }
+
+  .term-second {
+    padding: 40px 0px;
+  }
+
+  .tach-skills-item {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 24px;
+  }
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1280px) {
+  .tech-skills {
+    padding: 82px 0;
+  }
 }
